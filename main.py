@@ -31,9 +31,8 @@ class character:
             # this line is needs to be fixed
             if selected_Race in Race:
                 print(selected_Race)
-            else:
-                break 
-                print("please retry")
-            break
+            else: 
+                print("The text you entered does not match the races possible. Please re-enter and try again.")
+                break
         except value_Error:
             print("please retry")
