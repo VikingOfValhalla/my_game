@@ -25,14 +25,19 @@ class character:
     while True:
         try: 
 # this first print statement is to print the list of races
+            clear_console.clear()
             print("""Please select a race:""")
             print(Race)
             selected_Race = str(input("please enter race: "))
             # this line is needs to be fixed
             if selected_Race in Race:
-                print(selected_Race)
+                clear_console.clear()
+                print(f"greetings {selected_Name} of the {selected_Race}'s.")
+                break
             else: 
                 print("The text you entered does not match the races possible. Please re-enter and try again.")
                 break
+            
+            
         except value_Error:
-            print("please retry")
+            print("The text you entered does not match the races possible. Please re-enter and try again.")
